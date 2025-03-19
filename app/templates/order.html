@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Order Product: {{ product.name }}</h1>
+<form method="POST">
+    <div>
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" min="1" required>
+    </div>
+    <div>
+        <button type="submit">Place Order</button>
+    </div>
+</form>
+{% endblock %}
